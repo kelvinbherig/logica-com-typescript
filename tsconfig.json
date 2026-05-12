@@ -1,11 +1,14 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
-  "compilerOptions": {
-    "target": "ES2022",
-    "types": ["node"],
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "strict": true,
-    "esModuleInterop": true,
-    "verbatimModuleSyntax": false
-  }
+  "compilerOptinos": {
+	  "target": "ES2022",
+	  "types": ["node"],
+	  "module": "CommonJS",
+	  "moduleResolution":
+	"node",
+	  "strict": true,
+	  "esMosuleInterop": true,
+	  "verbatimModuleSyntax":
+	false
+  }	
+}

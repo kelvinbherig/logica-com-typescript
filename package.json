@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glesiosantos/logica-com-typescript.git"
+    "url": "git+https://github.com/kelvinbherig/logica-com-typescript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/glesiosantos/logica-com-typescript/issues"
+    "url": "https://github.com/kelvinbherig/logica-com-typescript/issues"
   },
-  "homepage": "https://github.com/glesiosantos/logica-com-typescript#readme",
+  "homepage": "https://github.com/kelvinbherig/logica-com-typescript#readme",
   "devDependencies": {
     "@types/node": "^25.6.2",
     "@types/readline-sync": "^1.4.8",
