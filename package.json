@@ -1,18 +1,29 @@
-const tela = require("readline-sync")
-const { titulo } = require ("./utils.ts")
-
-let notas:string[] = []
-
-function telaCadastrarNotas() {
-
-	titulo("CADASTRO DE NOTAS")
-
-	const n1 = tela.question("Informe a primeira nota: ")
-	const n2 = tela.question("Informe a segunda nota: ")
-	const n3 = tela.question("Informe a terceira nota: ")
-
-	notas.push(`${n1};${n2},${3}`)
-
+{
+  "name": "logica-com-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glesiosantos/logica-com-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glesiosantos/logica-com-typescript/issues"
+  },
+  "homepage": "https://github.com/glesiosantos/logica-com-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@types/readline-sync": "^1.4.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
-
-export = {telaCadastrarNotas}
