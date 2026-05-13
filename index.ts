@@ -1,7 +1,6 @@
- import readline = require('readline-sync')
- 
+import tela = require('readline-sync')
 // pergunta o nome da pessoa
-const nome:string = String(readline.question('Qual é o seu nome? '))
-const anoNasc:number = Number(readline.question('Qual o ano do seu nascimento?'))
+const nome:string = tela.question('Qual é o seu nome? ')
+const anoNasc:number = Number(tela.question('Qual o ano do seu nascimento?'))
 const idade:number = 2026 - anoNasc
 console.log('Olá, '+ nome +' a sua idade é '+ idade + ' anos.')
