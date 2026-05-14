@@ -2,31 +2,25 @@ import readline = require('readline-sync')
 
 console.clear()
 
-const peso:number = redline.questionFloat("Informe seu peso: ")
-const altura:number = redline.questionFloat("Informe sua altura: ")
+const peso:number = readline.questionFloat("Informe seu peso: ")
+const altura:number = readline.questionFloat("Informe a sua altura: ")
 
 let situacao:string
 
-const imc = peso / (altura * altura
+const imc:number = peso / altura**2
 
-    if (imc < 18.5) {
-      console.log('Classificação: Baixo peso')
-    } 
-    else if (imc <"18.5 a 24.9") {
-      console.log('Classificação: Peso normal')
-    } 
-    else if (imc < "25.0 a 29.9") {
-      console.log('Classificação: Excesso de peso')
-    }
-    else if (imc <"30.0 a 34.9") {
-      console.log('Classificação: Obesidade de classe 1')
-    } 
-    else if (imc <"35.0 a 39.9") {
-      console.log('Classificação: Obesidade de classe 2')
-    }
-    else if (imc < "40") {
-      console.log('Classificação: Obesidade de classe 3')
-    }
+if (imc <= 18.5) {
+  situacao = "Baixo Peso"
+} else if (imc > 18.5 && imc < 25) {
+  situacao = "Peso Normal"
+} else if (imc >= 25 && imc < 30) {
+  situacao = "Excesso de Peso"
+} else if (imc >= 30 && imc < 35) {
+  situacao = "Obesidade de Classe 1"
+} else if (imc >= 35 && imc < 40) {
+  situacao = "Obsedidade de Classe 2"
+} else {
+  situacao = "Obsedidade de Classe 3"
+}
 
-   
-
+console.log(`Seu indice de massa corporal é de ${imc.toFixed(2)} e sua situação atual é de ${situacao}`)
