@@ -2,6 +2,10 @@ import readline = require('readline-sync')
 
 console.clear()
 
+let loop:boolearn = true
+
+while(loop) {
+
 const peso:number = readline.questionFloat("Informe seu peso: ")
 const altura:number = readline.questionFloat("Informe a sua altura: ")
 
@@ -24,3 +28,9 @@ if (imc <= 18.5) {
 }
 
 console.log(`Seu indice de massa corporal é de ${imc.toFixed(2)} e sua situação atual é de ${situacao}`)
+const continuar = readline.question("Deseja contunuar? S - Sim | N - Não")
+
+if(continuar.toUpperCase() === 'N') {
+	loop = false
+}
+} 
